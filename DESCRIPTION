@@ -7,4 +7,5 @@ Maintainer: Kho Yin Xun <kho.yinxun@gmail.com>, Ming Yuan Lee <leeming.yuan2001@
 Description: This package is a starting point of working with packages, hence the amount of shapes that can be drawn are limited. The current available shapes are square, right triangle, christmas tress and diamond. 
 License: db
 Encoding: UTF-8
-LazyData: true
+LazyData:  true
+RoxygenNote: 7.2.3
