@@ -1,11 +1,10 @@
-Package: shape
+Package: Shapes
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Draw basic shapes
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Yin Xun Kho & Ming Yuan Lee
+Maintainer: Kho Yin Xun <kho.yinxun@gmail.com>, Ming Yuan Lee <leeming.yuan2001@gmail.com>
+Description: This package is a starting point of working with packages, hence the amount of shapes that can be drawn are limited. The current available shapes are square, right triangle, christmas tress and diamond. 
+License: db
 Encoding: UTF-8
-LazyData: true
+LazyData: true
