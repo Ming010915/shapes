@@ -14,10 +14,22 @@
 #   Test Package:              'Cmd + Shift + T'
 
 
-draw_square <- function(size) {
-  for (i in 1:size) {
-    for (j in 1:size) {
-      if (i == 1 || i == size || j == 1 || j == size) {
+#' Draw a square
+#'
+#' This function draws a square with the specified number of rows and columns.
+#'
+#' @param n The number of rows and columns in the square.
+#'
+#' @examples
+#' draw_square(5)
+#'
+#' @export
+#'
+#' @return None
+draw_square <- function(n) {
+  for (i in 1:n) {
+    for (j in 1:n) {
+      if (i == 1 || i == n || j == 1 || j == n) {
         cat("* ")
       } else {
         cat("  ")
@@ -27,6 +39,18 @@ draw_square <- function(size) {
   }
 }
 
+#' Draw a right triangle
+#'
+#' This function draws a right triangle with the specified number of rows.
+#'
+#' @param n The number of rows in the right triangle.
+#'
+#' @examples
+#' draw_right_triangle(5)
+#'
+#' @export
+#'
+#' @return None
 draw_right_triangle <- function(n) {
   for (i in 1:n) {
     cat(paste(rep("*", i), collapse = " "))
@@ -34,6 +58,18 @@ draw_right_triangle <- function(n) {
   }
 }
 
+#' Draw a Christmas tree
+#'
+#' This function draws a Christmas tree with the specified number of rows.
+#'
+#' @param n The number of rows in the Christmas tree.
+#'
+#' @examples
+#' draw_christmas_tree(5)
+#'
+#' @export
+#'
+#' @return None
 draw_christmas_tree <- function(n) {
   for (i in 1:n) {
     spaces <- n - i
@@ -49,11 +85,19 @@ draw_christmas_tree <- function(n) {
   cat("**\n")
 }
 
+#' Print a diamond
+#'
+#' This function prints a diamond shape with the specified number of rows
+#'
+#' @param n The number of rows in the diamond
+#'
+#' @examples
+#' print_diamond(5)
+#'
+#' @export
+#'
+#' @return None
 print_diamond <- function(n) {
-  if (n != 5) {
-    stop("Number of rows must be 5 for a pentagon.")
-  }
-
   for (i in 1:n) {
     spaces <- n - i
     cat(paste(rep(" ", spaces), collapse = ""))
@@ -68,7 +112,3 @@ print_diamond <- function(n) {
     cat("\n")
   }
 }
-
-
-
-
